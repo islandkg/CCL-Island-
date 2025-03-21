@@ -1,0 +1,101 @@
+<!-- 
+Template for IMA's Creative Coding Lab 
+
+Project A: Generative Creatures
+CCLaboratories Biodiversity Atlas 
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Shymin </title>
+
+    <!-- allow special characters, including Arabic, Chinese, Korean, Japanese, etc. -->
+    <meta charset="UTF-8">
+    <!-- link the style sheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- import p5.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.3/lib/p5.min.js"></script>
+    <script>
+        // prevent scrolling when spacebar and arrow keys are pressed.
+        window.addEventListener("keydown", function (e) { if ([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) { e.preventDefault(); } }, false);
+    </script>
+</head>
+
+<body>
+    <!-- title -->
+    <div id="title-wrapper">
+        <h1 class="headline black"> Shymin </h1>
+    </div>
+
+    <!-- main content -->
+    <div id="main-wrapper">
+        <div id="p5-canvas-container">
+            <!-- This is where your p5 sketch will be appended and appear! -->
+        </div>
+        <div class="two-columns">
+            <div class="left">
+                <h3 class="red">Scientific Name:</h3>
+                <p>Silere-Echinoidea (shy sea urchin)</p>
+
+                <h3 class="red">Discovered by / at:</h3>
+                <p>Jacques Cousteau discovered this creature during the 1970-80s expedition missions to find the titanic. 
+                    This creature was discovered near the Java Trench in the Indian Ocean.</p>
+
+                <h3 class="green">Family:</h3>
+                <p>This creature is a part of the Phylum Echinodermata family just as S
+                    tarfish and Sea urchins are. This is due to its similar abilities, appearance and tendencies.</p>
+            </div>
+            <div class="right">
+                <h3 class="green">Habitat:</h3>
+                <p>Deep-sea ocean biome, salt water.</p>
+
+                <h3 class="green">Appearance:</h3>
+                <p> Round dark purple body with a central tiny body (lighter purple). 
+                    This body is surrounded by a double helix shape that continuously rotates for 
+                    advanced locomotion and defense. This helix shape CAN change when the creature is 
+                    faced with a possible threat.</p>
+
+                <h3 class="green">Key Characteristics:</h3>
+                <ul>
+                    <li>Camouflage ability when feeling endangered.</li>
+                    <li>Ability to expand and change helix barrier for defense.</li>
+                    <li>Eats plankton and algae</li>
+                    <li>...</li>
+                </ul>
+            </div>
+        </div>
+        <div class="one-column">
+            <p>
+                <span class="yellow">What we know so far about Shymin?</span>
+                This creature seems to be mostly harmless during the winter and fall seasons, however when summer comes, due to an increase in sunlight, the creature 
+                will become more and more agitated and scared allowing for Shymin to utilize all of its defense mechanisms (increase in size, change of helix shape...).
+                Shymin is mostly harmless as it's diet consists of mainly plant-type nutrients however when Shymin becomes agitated, its diet will slightly shift to a more
+                "scavenger-like" diet.
+                This creature has numerous hidden eyes that allow for 360 vision. This allows for the creature to detect any potential threats nearby.
+
+                <br>
+                <span class="yellow">Guidelines for human interaction with this creature</span> When pointing at this 
+                creature, the beast will blend into the biome that it is in using controlled changes in its microscopic pigments. If you want to take a picture, 
+                click "S" key to TOGGLE phone and "H" key to HIDE phone. Once your phone is in your hand, click on the screen to take a picture and see 
+                how the creature reacts. HINT : Keep taking photos!
+            </p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer" class="black">
+        <p>A CCLab project made by Island Gabler in Spring 2025</p>
+    </div>
+
+    <!-- Home: Link back to the ATLAS page-->
+    <div id="home">
+        <a href="https://cclab.work/atlas">Back to the ATLAS</a>
+    </div>
+
+    <!-- Include your sketch.js file here -->
+    <script src="sketch.js" type="text/javascript"> </script>
+</body>
+
+</html>
