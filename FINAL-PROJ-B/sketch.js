@@ -89,7 +89,7 @@ let show100 =  true;
 
 let currentPhraseI = 0; // to track the current phrase
 let pos = 0; // to track the position of the letter in the current phrase
-let restartDelay = 60;
+let restartDelay = 100;
 let phraseComplete = false; // to track if the current phrase is finished
 
 
@@ -710,7 +710,7 @@ pop();
 
 
   //navigation : 
-let navigationSpeed = 6;
+let navigationSpeed = 3;
 ObjsCollected(); // display objscollected function
 
 // if(done = true){ // for last stage start wires connected appear
